@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Rename
+namespace TravelBlog
 {
 	public class Startup
 	{
@@ -49,7 +49,7 @@ namespace Rename
 
 			app.Run(async (context) =>
 			{
-				await context.Response.WriteAsync("Hello World!");
+				await context.Response.WriteAsync("Loading?");
 			});
 		}
 	}

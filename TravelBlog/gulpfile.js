@@ -5,7 +5,7 @@
 // other content removed
 
 gulp.task("sass", function () {
-  return gulp.src('Styles/main2.scss')
+  return gulp.src('wwwroot/scss/master.scss')
     .pipe(sass())
     .pipe(gulp.dest('wwwroot/css'));
 });
