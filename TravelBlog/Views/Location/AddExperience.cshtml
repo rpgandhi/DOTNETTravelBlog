@@ -11,7 +11,7 @@
     @Html.TextBoxFor(model => model.Title)
     @Html.LabelFor(model => model.Description)
     @Html.TextBoxFor(model => model.Description)
-    @Html.Hidden("LocationId")
+    @Html.HiddenFor(model => model.LocationId)
 
     <input type="submit" value="Create" />
 }

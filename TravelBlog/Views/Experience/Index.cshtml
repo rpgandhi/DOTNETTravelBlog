@@ -9,6 +9,8 @@
 @foreach (var experience in Model)
 {
     <p>@experience.title</p>
+    <p>@Html.ActionLink("Edit", "Edit", new { id = experience.id }) |
+       @Html.ActionLink("Delete", "Delete", new { id = experience.id })</p>
 }
 
-<p>@Html.ActionLink("Create New", "Create")</p>
+<p>@Html.ActionLink("Back Home", "Index", "Location")</p>
