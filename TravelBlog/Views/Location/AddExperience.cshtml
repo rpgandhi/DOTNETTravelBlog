@@ -1,0 +1,17 @@
+﻿@model TravelBlog.ViewModels.LocationExperiencesModel
+
+@{
+    ViewData["Title"] = "Experience - Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Title)
+    @Html.TextBoxFor(model => model.Title)
+    @Html.LabelFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description)
+    @Html.Hidden("LocationId")
+
+    <input type="submit" value="Create" />
+}

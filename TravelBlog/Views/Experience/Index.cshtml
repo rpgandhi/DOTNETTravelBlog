@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TravelBlog.Models.Experience>
+
+@{
+    ViewData["Title"] = "Experiences";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Experience List</h1>
+@foreach (var experience in Model)
+{
+    <p>@experience.title</p>
+}
+
+<p>@Html.ActionLink("Create New", "Create")</p>

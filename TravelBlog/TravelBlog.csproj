@@ -14,6 +14,8 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\scss\" />
     <Folder Include="Views\Location\" />
+    <Folder Include="Views\Experience\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,4 +26,7 @@
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Views\Experience\Create.cs" />
+  </ItemGroup>
 </Project>
